@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import javax.faces.bean.ManagedBean;
 import java.util.List;
 
 @Controller
@@ -22,4 +23,6 @@ public class BookController {
         model.addAttribute(BOOKS_LIST, books);
         return "pages/books_dynamic";
     }
+
+
 }
