@@ -1,6 +1,6 @@
 <#import "/spring.ftl" as spring />
 
-<h4 class="mb-3">Search book by author's name (case sensitive)</h4>
+<h4 class="mb-3">Search book by author's name</h4>
 
 <form action="/search" method="post">
     <div class="mb-3 mt-4">
