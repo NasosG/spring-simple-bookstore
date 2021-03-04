@@ -26,7 +26,7 @@ public class SearchBookController {
     @PostMapping("/search")
     public String searchTest(@ModelAttribute("searchForm") SearchForm searchForm, Model model, @RequestParam(value = "author", defaultValue = "") String author) {
 
-        String authorsName = author; //TODO NULL CHECK
+        String authorsName = author;
         List<BookModel> books = bookService.findByAuthorContaining(authorsName);
         if (!books.isEmpty()) model.addAttribute(BOOKS_LIST, books);
 
